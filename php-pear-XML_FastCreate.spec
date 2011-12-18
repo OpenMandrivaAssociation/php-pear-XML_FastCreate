@@ -3,13 +3,13 @@
 %define		upstream_name	%{_class}_%{_subclass}
 
 Name:		php-pear-%{upstream_name}
-Version:	1.0.3
-Release:	%mkrel 8
+Version:	1.0.4
+Release:	%mkrel 1
 Summary:	Fast creation of valid XML with DTD control and translation options
 License:	PHP License
 Group:		Development/PHP
 URL:		http://pear.php.net/package/XML_FastCreate/
-Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tar.bz2
+Source0:	http://download.pear.php.net/package/%{upstream_name}-%{version}.tgz
 Requires(post): php-pear
 Requires(preun): php-pear
 Requires:	php-pear
@@ -55,6 +55,7 @@ rm -rf %{buildroot}%{_datadir}/pear/.??*
 
 rm -rf %{buildroot}%{_datadir}/pear/docs
 rm -rf %{buildroot}%{_datadir}/pear/tests
+rm -rf %{buildroot}%{_datadir}/pear/date
 
 install -d %{buildroot}%{_datadir}/pear/packages
 install -m 644 %{upstream_name}.xml %{buildroot}%{_datadir}/pear/packages
