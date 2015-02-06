@@ -4,7 +4,7 @@
 
 Name:		php-pear-%{upstream_name}
 Version:	1.0.4
-Release:	2
+Release:	3
 Summary:	Fast creation of valid XML with DTD control and translation options
 License:	PHP License
 Group:		Development/PHP
